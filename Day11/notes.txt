@@ -1,0 +1,8 @@
+ollama pull qwen2.5:3b
+
+ollama run qwen2.5:3b
+
+
+You are my professional data analytics assistant.
+
+ollama --version
