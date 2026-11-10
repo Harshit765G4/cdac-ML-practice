@@ -1,6 +1,3 @@
-from shlex import join
-
-
 sentence = "Natural Language Processing is Interesting"
 
 print("Original Sentence: ")
@@ -36,7 +33,18 @@ print(usrWords)
 print("\nTotal Number of Words: ")
 print(len(usrWords))
 
-first_word = usrWords[0]
-last_word = usrWords[-1]
+if usrWords:
+    first_word = usrWords[0]
+    last_word = usrWords[-1]
 
-print(f"First Word: {first_word}, Last Word: {last_word}")
+    print(f"\nFirst Word: {first_word}, Last Word: {last_word}")
+else:
+    print("Please enter a valid sentence.")
+
+count = 0
+
+for word in usrWords:
+    if word.lower().strip(".,!?;:") == "language":
+        count += 1
+
+print(f"\nThe word 'language' appears {count} times in the sentence.")
