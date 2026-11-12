@@ -35,3 +35,7 @@ models:
     defaultCompletionOptions:
       contextLength: 1048576
       maxTokens: 65536
+
+
+https://github.com/Sarthak1322/CDAC-DAI-CCEE.git
+
